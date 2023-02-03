@@ -5,10 +5,23 @@ function buildPersonHTML(listName) {
     let newDivElement = document.createElement("div");
     newDivElement.classList.add("person-block");
 
+    //create thumbnail picture
+    let picture = document.createElement("img");
+    picture.classList.add("thumbnail-picture");
+    picture.setAttribute("src", listName.picture.large);
+    newDivElement.appendChild(picture);
+
     //create header with name
     let nameHeader = document.createElement("h2");
     nameHeader.classList.add("name");
-    let textName = document.createTextNode(`${listName.name.first} ${listName.name.last}`);
+    let firstName = listName.name.first;
+    let lastName = listName.name.last;
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+    let newFirstName = capitalizeFirstLetter(firstName);
+    let newLastName = capitalizeFirstLetter(lastName);
+    let textName = document.createTextNode(`${newFirstName} ${newLastName}`)
     nameHeader.appendChild(textName);
     newDivElement.appendChild(nameHeader);
 

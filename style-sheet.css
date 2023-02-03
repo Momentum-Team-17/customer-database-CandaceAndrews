@@ -16,6 +16,11 @@
     text-align: center;
 }
 
+.thumbnail-picture {
+    border-style: solid black;
+    border-radius: 5px;
+}
+
 .phone-number {
     color: red;
 }
