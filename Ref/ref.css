@@ -1,0 +1,12 @@
+* {
+  border: 1px solid blue;
+}
+
+.person-block {
+  background-color: forestgreen;
+  color: greenyellow;
+}
+
+.name {
+  font-style: oblique;
+}
