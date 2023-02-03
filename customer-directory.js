@@ -22,9 +22,25 @@ function buildPersonHTML(listName) {
     //create address
     let address = document.createElement('h3');
     address.classList.add("address");
-    addressText = document.createTextNode(`${listName.location.street.number} ${listName.location.street.name} ${listName.location.city} ${listName.location.state} ${listName.location.postcode}`);
+    let fullStateName = listName.location.state;
+    let stateAbbreviation = nameToAbbr(fullStateName);
+    addressText = document.createTextNode(`${listName.location.street.number} ${listName.location.street.name} ${listName.location.city} ${stateAbbreviation} ${listName.location.postcode}`);
     address.appendChild(addressText);
     newDivElement.appendChild(address);
+
+    //create date of birth
+    let dateOfBirth = document.createElement("p");
+    dateOfBirth.classList.add("date-of-birth");
+    let dateOfBirthText = document.createTextNode(`DOB: ${listName.dob.date}`);
+    dateOfBirth.appendChild(dateOfBirthText);
+    newDivElement.appendChild(dateOfBirth);
+
+    //create registered date
+    let registeredDate = document.createElement("p");
+    registeredDate.classList.add("registered");
+    let registeredText = document.createTextNode(`Customer since: ${listName.registered.date}`);
+    registeredDate.appendChild(registeredText);
+    newDivElement.appendChild(registeredDate);
 
     //insert into div
     customerContainer.appendChild(newDivElement);

@@ -19,3 +19,15 @@
 .phone-number {
     color: red;
 }
+
+.address {
+    color: purple;
+}
+
+.date-of-birth {
+    color: rgb(33, 35, 104);
+}
+
+.registered {
+    color: rgb(91, 29, 39);
+}
