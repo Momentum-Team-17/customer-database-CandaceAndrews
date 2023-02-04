@@ -1,4 +1,4 @@
-let customerContainer = document.querySelector("#customer-container");
+let customerContainer = document.querySelector(".customer-container");
 
 function buildPersonHTML(listName) {
     //create div
@@ -44,14 +44,16 @@ function buildPersonHTML(listName) {
     //create date of birth
     let dateOfBirth = document.createElement("p");
     dateOfBirth.classList.add("date-of-birth");
-    let dateOfBirthText = document.createTextNode(`DOB: ${listName.dob.date}`);
+    let birthdayFormat = moment(listName.dob.date).format("MMM Do YYYY");
+    let dateOfBirthText = document.createTextNode(`DOB: ${birthdayFormat}`);
     dateOfBirth.appendChild(dateOfBirthText);
     newDivElement.appendChild(dateOfBirth);
 
     //create registered date
     let registeredDate = document.createElement("p");
     registeredDate.classList.add("registered");
-    let registeredText = document.createTextNode(`Customer since: ${listName.registered.date}`);
+    let registerFormat = moment(listName.registered.date).format("MMM Do YYYY");
+    let registeredText = document.createTextNode(`Customer since: ${registerFormat}`);
     registeredDate.appendChild(registeredText);
     newDivElement.appendChild(registeredDate);
 
@@ -62,6 +64,3 @@ function buildPersonHTML(listName) {
 for (let person of customers) {
     buildPersonHTML(person);
 }
-
-
-

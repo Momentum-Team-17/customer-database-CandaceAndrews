@@ -2,18 +2,46 @@
     border: 1px solid blue;
 }
 
-#customer-container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 350px 350px 350px 350px 350px;
-    gap: 9px;
-    padding: 15px;
-    width: fit-content;
+body {
+    background-color: rgb(142, 182, 161);
+    font-family: 'Neuton', serif;
+    font-size: 20px;
 }
+
+.page-title {
+    font-weight: 300;
+    font-size: 40px;
+    padding: 30px 0px 30px;
+    margin: 5px 0px 5px 0px;
+    background-color: rgb(235, 210, 214);
+    color: rgb(69, 52, 52)
+}
+
+.customer-container {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 450px 450px 450px;
+    gap: 15px;
+    padding: 15px;
+    justify-content: center;
+    /* width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0px 10px 0px; */
+}
+
+/* .customer-container>div {
+    flex: 1 1 150px;
+} */
 
 .person-block {
     background-color: rgb(168, 234, 219);
     text-align: center;
+}
+
+.name {
+    margin: 15px 0px 9px 0px;
 }
 
 .thumbnail-picture {
@@ -23,16 +51,20 @@
 
 .phone-number {
     color: red;
+    margin: 0px 0px 0px 0px;
 }
 
 .address {
     color: purple;
+    margin: 5px 0px 0px 0px;
 }
 
 .date-of-birth {
     color: rgb(33, 35, 104);
+    margin: 5px 0px 0px 0px;
 }
 
 .registered {
     color: rgb(91, 29, 39);
+    margin: 5px 0px 0px 0px;
 }
