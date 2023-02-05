@@ -1,42 +1,32 @@
-* {
+/* * {
     border: 1px solid blue;
-}
+} */
 
 body {
-    background-color: rgb(142, 182, 161);
-    font-family: 'Neuton', serif;
-    font-size: 20px;
+
+    font-family: Open Sans;
+    font-size: 15px;
+    margin: 25px 10px 100px 10px;
 }
 
 .page-title {
-    font-weight: 300;
-    font-size: 40px;
-    padding: 30px 0px 30px;
-    margin: 5px 0px 5px 0px;
-    background-color: rgb(235, 210, 214);
-    color: rgb(69, 52, 52)
+    font-weight: 555;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px 0px 45px 25px;
+    border-bottom-width: 2px;
+    border-bottom-color: #89DEEF;
+    border-bottom-style: solid;
 }
 
 .customer-container {
-    display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows: 450px 450px 450px;
-    gap: 15px;
-    padding: 15px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
     justify-content: center;
-    /* width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0px 0px 10px 0px; */
 }
 
-/* .customer-container>div {
-    flex: 1 1 150px;
-} */
-
 .person-block {
-    background-color: rgb(168, 234, 219);
     text-align: center;
 }
 
@@ -45,26 +35,26 @@ body {
 }
 
 .thumbnail-picture {
-    border-style: solid black;
-    border-radius: 5px;
+    width: 120px;
+    height: 150px;
+    border-radius: 50% 45%;
+    object-fit: cover;
+    /* transform: rotate(30deg); */
 }
 
-.phone-number {
-    color: red;
+.email {
     margin: 0px 0px 0px 0px;
+    color: rgb(92, 90, 90);
 }
 
 .address {
-    color: purple;
-    margin: 5px 0px 0px 0px;
+    margin: 5px 20px 0px 20px;
 }
 
 .date-of-birth {
-    color: rgb(33, 35, 104);
     margin: 5px 0px 0px 0px;
 }
 
 .registered {
-    color: rgb(91, 29, 39);
     margin: 5px 0px 0px 0px;
 }

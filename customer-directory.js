@@ -25,19 +25,19 @@ function buildPersonHTML(listName) {
     nameHeader.appendChild(textName);
     newDivElement.appendChild(nameHeader);
 
-    //create phone number
-    let phoneNumber = document.createElement("p");
-    phoneNumber.classList.add("phone-number");
-    let phoneText = document.createTextNode(`Phone: ${listName.phone} Cell: ${listName.cell}`);
-    phoneNumber.appendChild(phoneText);
-    newDivElement.appendChild(phoneNumber);
+    //create email
+    let email = document.createElement("p");
+    email.classList.add("email");
+    let emailText = document.createTextNode(listName.email);
+    email.appendChild(emailText);
+    newDivElement.appendChild(email);
 
     //create address
-    let address = document.createElement('h3');
+    let address = document.createElement('p');
     address.classList.add("address");
     let fullStateName = listName.location.state;
     let stateAbbreviation = nameToAbbr(fullStateName);
-    addressText = document.createTextNode(`${listName.location.street.number} ${listName.location.street.name} ${listName.location.city} ${stateAbbreviation} ${listName.location.postcode}`);
+    addressText = document.createTextNode(`${listName.location.street.number} ${listName.location.street.name} ${listName.location.city}, ${stateAbbreviation} ${listName.location.postcode}`);
     address.appendChild(addressText);
     newDivElement.appendChild(address);
 
