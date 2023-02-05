@@ -25,12 +25,6 @@ function buildPersonHTML(listName) {
     nameHeader.appendChild(textName);
     newDivElement.appendChild(nameHeader);
 
-    //create gold banner image 
-    // let goldBanner = document.createElement("img");
-    // goldBanner.classList.add("gold-banner");
-    // goldBanner.setAttribute("src", "gold_banner.png");
-    // newDivElement.appendChild(goldBanner);
-
     //create email
     let email = document.createElement("p");
     email.classList.add("email");

@@ -40,6 +40,7 @@ body {
     background-repeat: no-repeat;
     height: 50px;
     background-position: center center;
+    opacity: 0.6;
 }
 
 .thumbnail-picture {
@@ -67,9 +68,3 @@ body {
 .registered {
     margin: 5px 0px 0px 0px;
 }
-
-/* .gold-banner {
-    width: 700px;
-    height: auto;
-    object-fit: cover;
-} */
