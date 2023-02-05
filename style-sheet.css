@@ -3,10 +3,11 @@
 } */
 
 body {
-
     font-family: Open Sans;
     font-size: 15px;
+    color: white;
     margin: 25px 10px 100px 10px;
+    background-color: rgb(28, 28, 30);
 }
 
 .page-title {
@@ -15,7 +16,7 @@ body {
     padding: 0px;
     margin: 0px 0px 45px 25px;
     border-bottom-width: 2px;
-    border-bottom-color: #89DEEF;
+    border-bottom-color: #b6668d;
     border-bottom-style: solid;
 }
 
@@ -31,7 +32,14 @@ body {
 }
 
 .name {
-    margin: 15px 0px 9px 0px;
+    color: black;
+    margin: 15px 0px 15px 0px;
+    padding-top: 3px;
+    background: url(gold_banner.png);
+    background-size: 140% auto;
+    background-repeat: no-repeat;
+    height: 50px;
+    background-position: center center;
 }
 
 .thumbnail-picture {
@@ -39,12 +47,13 @@ body {
     height: 150px;
     border-radius: 50% 45%;
     object-fit: cover;
-    /* transform: rotate(30deg); */
+    border-style: solid;
+    border-color: rgb(187, 161, 76)
 }
 
 .email {
     margin: 0px 0px 0px 0px;
-    color: rgb(92, 90, 90);
+    color: rgb(141, 138, 138);
 }
 
 .address {
@@ -58,3 +67,9 @@ body {
 .registered {
     margin: 5px 0px 0px 0px;
 }
+
+/* .gold-banner {
+    width: 700px;
+    height: auto;
+    object-fit: cover;
+} */
